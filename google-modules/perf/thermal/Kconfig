@@ -21,7 +21,7 @@ config GOOGLE_THERMAL_CPM_MBOX
 
 config GOOGLE_POWERCAP
 	tristate "Google LLc powercap framework"
-	depends on POWERCAP && OF && VH_SCHED && PIXEL_EM
+	depends on POWERCAP && OF
 	help
 	  This driver provides the infrastructure for building the powertree
 	  for pixel devices. The tree nodes can be real power consuming devices

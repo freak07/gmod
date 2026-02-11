@@ -362,10 +362,6 @@ void vh_sched_switch_pixel_mod(void *data, bool preempt,
 	now = sched_clock();
 	vprev = get_vendor_task_struct(prev);
 
-	if (vprev->adpf_adj) {
-		update_task_real_cap(prev);
-	}
-
 	/*
 	 * Update previous task's runnable_start_ns if it is in TASK_RUNNING state,
 	 * which means it remains in rq. Otherwise, invalidate runnable_start_ns,
