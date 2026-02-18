@@ -1,5 +1,0 @@
-# SPDX-License-Identifier: GPL-2.0-only
-
-config METRICS_COLLECTION_FRAMEWORK
-	tristate "Kernel metrics collection framework driver"
-	default n
